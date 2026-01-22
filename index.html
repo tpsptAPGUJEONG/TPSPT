@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPS PT 압구정점 | 김승현 대표</title>
+    <!-- Google Fonts: Noto Sans KR -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#FACC15', // Yellow-400
+                        zinc: {
+                            950: '#09090b',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; scroll-behavior: smooth; }
+        .text-gradient {
+            background: linear-gradient(to right, #FACC15, #EAB308);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(24, 24, 27, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(250, 204, 21, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 w-full z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800/50">
+        <div class="container mx-auto px-6 h-16 flex items-center justify-between">
+            <h1 class="text-xl font-black tracking-tighter italic">TPS <span class="text-brand">PT</span></h1>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#hero" class="hover:text-brand transition">홈</a>
+                <a href="#profile" class="hover:text-brand transition">트레이너 소개</a>
+                <a href="#results" class="hover:text-brand transition">성과</a>
+                <a href="#programs" class="hover:text-brand transition">프로그램</a>
+            </nav>
+            <a href="https://talk.naver.com/ct/w5vvfi?frm=mnmb&frm=nmb_detail#nafullscreen" class="bg-brand text-zinc-950 px-4 py-2 rounded-full text-xs font-bold hover:scale-105 transition transform">문의하기</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80" alt="Gym Background" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-b from-zinc-950/50 via-zinc-950/80 to-zinc-950"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl">
+                <p class="text-brand font-bold tracking-widest mb-4 flex items-center gap-2 uppercase">
+                    <span class="w-8 h-[2px] bg-brand"></span> Apgujeong Specialist
+                </p>
+                <h2 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                    운동의 문턱을 낮추고,<br>
+                    <span class="text-gradient">삶의 질을 높입니다.</span>
+                </h2>
+                <p class="text-zinc-400 text-lg md:text-xl mb-10 leading-relaxed">
+                    실패만 반복했던 PT는 잊으세요. 14년 경력의 김승현 대표가<br class="hidden md:block"> 
+                    당신의 운동 자립을 위한 가장 정확한 가이드를 제시합니다.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://open.kakao.com/o/sF5TSATh" class="bg-brand text-zinc-950 px-8 py-4 rounded-xl font-bold text-lg text-center hover:bg-yellow-300 transition shadow-lg shadow-brand/20">카카오톡 무료상담</a>
+                    <a href="#programs" class="border border-zinc-700 px-8 py-4 rounded-xl font-bold text-lg text-center hover:bg-zinc-800 transition">프로그램 보기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="py-24 bg-zinc-900/30">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="w-full md:w-1/2">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-brand/20 rounded-2xl blur group-hover:bg-brand/30 transition duration-500"></div>
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80" alt="Trainer Kim" class="relative rounded-2xl w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition duration-500">
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <span class="text-brand font-bold text-sm uppercase tracking-widest">About Representative</span>
+                    <h3 class="text-4xl font-black mt-2 mb-6">김승현 대표 <span class="text-lg font-normal text-zinc-500 ml-2">TPS PT 압구정점</span></h3>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <span class="text-brand font-bold text-xl">14Y+</span>
+                            <p class="text-zinc-300 leading-relaxed">14년 동안 수천 명의 회원을 코칭하며 쌓아온 데이터로 실패 없는 운동 경험을 제공합니다.</p>
+                        </div>
+                        <ul class="space-y-4 border-l-2 border-zinc-800 pl-6">
+                            <li class="flex items-center gap-3">
+                                <svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>운동 입문자/중장년층 전문 코칭</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>신체 기능 회복 및 재활 전문가</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>PT 실패 경험자 전담 맞춤 프로세스</span>
+                            </li>
+                        </ul>
+                        <div class="pt-6">
+                            <p class="text-zinc-500 text-sm italic">"운동은 어렵고 힘든 것이 아니라, 스스로의 몸을 알아가는 즐거운 과정이어야 합니다."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proof / Results Section -->
+    <section id="results" class="py-24 bg-zinc-950">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl md:text-4xl font-black mb-4 italic uppercase">Proof of Excellence</h3>
+                <div class="h-1 w-20 bg-brand mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Result 1 -->
+                <div class="glass-card p-8 rounded-3xl text-center group hover:-translate-y-2 transition duration-300">
+                    <div class="w-16 h-16 bg-zinc-900 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand/20 transition">
+                        <svg class="w-8 h-8 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">기능 회복 및 통증 완화</h4>
+                    <p class="text-zinc-400 text-sm">무너진 신체 밸런스를 바로잡아 일상의 통증에서 해방시켜 드립니다.</p>
+                </div>
+                <!-- Result 2 -->
+                <div class="glass-card p-8 rounded-3xl text-center group hover:-translate-y-2 transition duration-300">
+                    <div class="w-16 h-16 bg-zinc-900 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand/20 transition">
+                        <svg class="w-8 h-8 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">운동 효능감 상승</h4>
+                    <p class="text-zinc-400 text-sm">운동이 즐거워지는 마법, 스스로 변화를 느끼는 성취감을 제공합니다.</p>
+                </div>
+                <!-- Result 3 -->
+                <div class="glass-card p-8 rounded-3xl text-center group hover:-translate-y-2 transition duration-300">
+                    <div class="w-16 h-16 bg-zinc-900 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand/20 transition">
+                        <svg class="w-8 h-8 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">운동 자립 능력 확보</h4>
+                    <p class="text-zinc-400 text-sm">PT가 끝나도 혼자서 루틴을 짜고 안전하게 운동할 수 있게 만듭니다.</p>
+                </div>
+                <!-- Result 4 -->
+                <div class="glass-card p-8 rounded-3xl text-center group hover:-translate-y-2 transition duration-300">
+                    <div class="w-16 h-16 bg-zinc-900 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand/20 transition">
+                        <svg class="w-8 h-8 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">건강 라이프스타일</h4>
+                    <p class="text-zinc-400 text-sm">일시적인 변화가 아닌 평생 지속 가능한 건강 문화를 구축합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="programs" class="py-24 bg-zinc-900/50 relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="mb-16">
+                <span class="text-brand font-bold uppercase tracking-widest text-sm">TPS Programs</span>
+                <h3 class="text-4xl md:text-5xl font-black mt-4">당신에게 필요한<br><span class="text-brand">최적의 코칭 시스템</span></h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Program 1 -->
+                <div class="group bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden hover:border-brand transition duration-500">
+                    <div class="p-8">
+                        <div class="text-brand text-xs font-black mb-2 uppercase tracking-tighter">Program 01</div>
+                        <h4 class="text-2xl font-black mb-4">왕초보 탈출,<br>8주 완성 기초 마스터</h4>
+                        <p class="text-zinc-400 text-sm mb-8">기구 사용법부터 호흡법까지, 8주 만에 헬린이에서 탈출하는 속성 코스</p>
+                        <div class="space-y-3 mb-10">
+                            <div class="flex items-center gap-2 text-xs text-zinc-500"><svg class="w-4 h-4 text-brand" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> 주 2-3회 고밀도 코칭</div>
+                            <div class="flex items-center gap-2 text-xs text-zinc-500"><svg class="w-4 h-4 text-brand" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> 개인별 식단 가이드 제공</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Program 2 -->
+                <div class="group bg-zinc-950 border border-brand/50 rounded-3xl overflow-hidden hover:border-brand transition duration-500 scale-105 relative">
+                    <div class="absolute top-0 right-0 bg-brand text-zinc-950 px-4 py-1 text-[10px] font-black uppercase rounded-bl-xl">Popular</div>
+                    <div class="p-8">
+                        <div class="text-brand text-xs font-black mb-2 uppercase tracking-tighter">Program 02</div>
+                        <h4 class="text-2xl font-black mb-4 text-brand">정확도 100%! <br>웨이트 정석 가이드</h4>
+                        <p class="text-zinc-400 text-sm mb-8">근성장과 다이어트를 위한 가장 효율적인 웨이트 트레이닝 정석법 전수</p>
+                        <div class="space-y-3 mb-10">
+                            <div class="flex items-center gap-2 text-xs text-zinc-500"><svg class="w-4 h-4 text-brand" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> 프리웨이트 중심 교육</div>
+                            <div class="flex items-center gap-2 text-xs text-zinc-500"><svg class="w-4 h-4 text-brand" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> 정밀 동작 분석 및 피드백</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Program 3 -->
+                <div class="group bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden hover:border-brand transition duration-500">
+                    <div class="p-8">
+                        <div class="text-brand text-xs font-black mb-2 uppercase tracking-tighter">Program 03</div>
+                        <h4 class="text-2xl font-black mb-4 text-zinc-100">통증 안녕,<br>시니어 체형 교정</h4>
+                        <p class="text-zinc-400 text-sm mb-8">중장년층을 위한 부상 없는 안전한 맞춤 강화 운동 및 통증 케어 솔루션</p>
+                        <div class="space-y-3 mb-10">
+                            <div class="flex items-center gap-2 text-xs text-zinc-500"><svg class="w-4 h-4 text-brand" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> 저강도-고효율 안정화 운동</div>
+                            <div class="flex items-center gap-2 text-xs text-zinc-500"><svg class="w-4 h-4 text-brand" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> 생활 습관 및 체형 교정 프로그램</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="bg-brand rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 w-64 h-64 bg-zinc-950 opacity-10 rounded-full"></div>
+                <div class="relative z-10">
+                    <h3 class="text-zinc-950 text-4xl md:text-6xl font-black mb-6 leading-tight">
+                        고민은 변화를 늦출 뿐입니다.<br>
+                        지금 바로 시작하세요.
+                    </h3>
+                    <p class="text-zinc-900 font-medium mb-12 max-w-2xl mx-auto opacity-80 italic">
+                        "당신의 첫걸음이 지속 가능한 건강이 되도록 최선을 다하겠습니다."
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <a href="https://open.kakao.com/o/sF5TSATh" class="bg-zinc-950 text-brand px-10 py-5 rounded-2xl font-bold text-xl hover:scale-105 transition shadow-2xl flex items-center gap-3">
+                            카카오톡 상담 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 3.185-9 7.115 0 2.558 1.707 4.814 4.332 6.091l-.641 2.346c-.053.193.071.387.257.435.061.016.124.016.185.002l2.768-1.002c.36.05.727.076 1.1.076 4.97 0 9-3.185 9-7.115S16.97 3 12 3z"/></svg>
+                        </a>
+                        <a href="https://talk.naver.com/ct/w5vvfi?frm=mnmb&frm=nmb_detail#nafullscreen" class="bg-white text-zinc-950 px-10 py-5 rounded-2xl font-bold text-xl hover:scale-105 transition shadow-2xl flex items-center gap-3">
+                            네이버 톡톡 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                        </a>
+                    </div>
+                    
+                    <div class="mt-16 flex justify-center gap-8">
+                        <a href="https://www.instagram.com/easy_coach29?igsh=MXI0Z3Nwd2N2dzl0cQ==" class="w-12 h-12 rounded-full border-2 border-zinc-950/20 flex items-center justify-center hover:bg-zinc-950 hover:text-brand transition duration-300">
+                           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 py-12 border-t border-zinc-900">
+        <div class="container mx-auto px-6 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-8">
+            <div>
+                <h1 class="text-2xl font-black italic mb-2">TPS <span class="text-brand">PT</span></h1>
+                <p class="text-zinc-500 text-sm">서울시 강남구 언주로 172길 29</p>
+                <p class="text-zinc-500 text-sm mt-1">대표: 김승현 | 14년 경력 초보 운동 전문 트레이닝</p>
+            </div>
+            <div class="text-zinc-600 text-xs">
+                &copy; 2024 TPS PT Apgujeong. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
